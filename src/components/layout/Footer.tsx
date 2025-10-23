@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelpCircle, Mail, BookOpen, Github, Twitter, Linkedin, Ticket, Link, BarChart3, TrendingUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
     return (
@@ -6,15 +7,27 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <section>
-                        <h3 className="text-lg font-semibold text-foreground mb-4">
-                            Ticket Manager
+                        <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+                            Doo-shen
                         </h3>
                         <p className="text-muted-foreground text-sm">
-                            A robust ticket management system for efficient workflow management.
+                            A ticket management system for efficient workflow management.
                         </p>
+                        <div className="flex gap-4 mt-4">
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+                                <Github className="h-5 w-5" />
+                            </a>
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
+                                <Twitter className="h-5 w-5" />
+                            </a>
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+                                <Linkedin className="h-5 w-5" />
+                            </a>
+                        </div>
                     </section>
                     <section>
-                        <h4 className="text-sm font-semibold text-foreground mb-4">
+                        <h4 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
+                            <Link className="h-4 w-4" />
                             Quick Links
                         </h4>
                         <nav aria-label="Footer navigation">
@@ -22,24 +35,27 @@ const Footer: React.FC = () => {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <BarChart3 className="h-4 w-4" />
                                         Dashboard
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <Ticket className="h-4 w-4" />
                                         Tickets
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <TrendingUp className="h-4 w-4" />
                                         Reports
                                     </a>
                                 </li>
@@ -47,7 +63,8 @@ const Footer: React.FC = () => {
                         </nav>
                     </section>
                     <section>
-                        <h4 className="text-sm font-semibold text-foreground mb-4">
+                        <h4 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
+                            <HelpCircle className="h-4 w-4" />
                             Support
                         </h4>
                         <nav aria-label="Support navigation">
@@ -55,24 +72,27 @@ const Footer: React.FC = () => {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <HelpCircle className="h-4 w-4" />
                                         Help Center
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <Mail className="h-4 w-4" />
                                         Contact Us
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors"
+                                        className="text-muted-foreground hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm transition-colors flex items-center gap-2"
                                     >
+                                        <BookOpen className="h-4 w-4" />
                                         Documentation
                                     </a>
                                 </li>
@@ -82,7 +102,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="mt-8 pt-8 border-t border-border">
                     <p className="text-center text-muted-foreground text-sm">
-                        © 2024 Ticket Manager. All rights reserved.
+                        © {new Date().getFullYear()} doo-shen. All rights reserved.
                     </p>
                 </div>
             </div>
