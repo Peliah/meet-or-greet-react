@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, Search, Bell, User, BarChart3, Ticket, TrendingUp, X, LogIn } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,17 +11,13 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <header className="bg-background border-b border-border">
+        <header className="bg-transparent">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
                 <div className="flex justify-between items-center h-16">
-                    {/* Logo */}
                     <div className="flex items-center">
-                        <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
-                            Doo-shen
-                        </h1>
+                        <img src={logo} alt="logo" className="h-15 w-15" />
                     </div>
 
-                    {/* Desktop Navigation - Only show when logged in */}
                     {isLoggedIn && (
                         <div className="hidden md:block">
                             <ul className="ml-10 flex items-baseline space-x-4" role="menubar">

@@ -1,11 +1,10 @@
 import { Layout } from './components/layout';
+import LandingPage from './screens/landing-page';
 
 function App() {
   return (
     <Layout>
-      <div className="">
-        {/* <h1 className="text-4xl font-bold text-foreground">Ticket Management System</h1> */}
-      </div>
+      <LandingPage />
     </Layout>
   );
 }
