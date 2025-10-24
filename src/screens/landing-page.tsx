@@ -1,9 +1,10 @@
-import { Hero } from "@/components"
+import { Hero, Features } from "@/components"
 
 const LandingPage = () => {
     return (
         <div>
             <Hero />
+            <Features />
         </div>
     )
 }
